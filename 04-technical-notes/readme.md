@@ -1,0 +1,1 @@
+Documentacion de conceptos entendidos, no copiar teoria.
