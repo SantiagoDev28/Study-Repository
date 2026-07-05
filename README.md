@@ -11,7 +11,7 @@ Every roadmap includes theory, hands-on exercises, projects, and personal notes 
 - I'm learning different areas of software engineering, including backend, frontend, software architecture, DevOps, databases, and cloud technologies, to become a well-rounded software engineer.
 - I'm also exploring AI and learning how to integrate it into real-world software solutions.
 
----
+
 
 ## 🎯 Goals
 
@@ -25,7 +25,7 @@ Every roadmap includes theory, hands-on exercises, projects, and personal notes 
 - Build real-world projects.
 - Learn how to integrate AI into software products.
 
----
+
 
 ## 📌 Project sections
 
@@ -36,7 +36,7 @@ Every roadmap includes theory, hands-on exercises, projects, and personal notes 
 - Technical notes [Personal notes explaining each topic](/04-technical-notes/README.md)
 - Resources [Books, articles, courses, and websites](/resources/README.md)
 
----
+
 
 ## 📚 Learning Method
 
@@ -48,7 +48,7 @@ Each roadmap follows the same structure:
 - Build practical projects.
 - Review and improve previous work.
 
----
+
 
 ## 💡 Philosophy
 
