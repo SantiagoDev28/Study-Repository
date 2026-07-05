@@ -2,8 +2,9 @@
 
 ## Preparation
 
-- [ ] Understand why TypeScript exist.
-- [ ] TypeScript concepts.
+- [x] Understand why TypeScript exist
+- [x] Why TypeScript was create
+- [x] Core TypeScript concepts
 
 ## Foundations
 
