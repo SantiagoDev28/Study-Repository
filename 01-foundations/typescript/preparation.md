@@ -8,6 +8,7 @@ Understand why TypeScript exists, what problems it solves, and when it should be
 
 - Why TypeScript was create
 - Core TypeScript concepts
+- TS Compiler
 
 ## What I Can Explain
 
@@ -31,6 +32,13 @@ Understand why TypeScript exists, what problems it solves, and when it should be
 ```
 pnpm add -D typescript
 ```
+
+### TypeScript Transpilation to JavaScript
+
+TypeScript was created to improve JavaScript development by adding a static type system. It helps developers detect many common errors and receive immediate feedback before running the application.
+However, web browsers and Node.js cannot execute TypeScript code directly. They only understand JavaScript.
+To solve this, the TypeScript compiler transpiles `.ts` files into JavaScript. During this process, it checks the code for type errors and generates JavaScript compatible with the ECMAScript version configured for the project.
+Once the transpilation is complete, the generated JavaScript can be executed by browsers or Node.js.
 
 ## Doubts
 
