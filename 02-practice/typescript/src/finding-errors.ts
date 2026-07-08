@@ -1,11 +1,18 @@
-// @ts-nocheck
 //With @ts-check, we can see type errors in JavaScript files.
 
-// JavaScript example.
+// JavaScript example [JavaScript Code](../../../04-technical-notes/typescript/finding/errors.ts)
+
 (async ()=> { // This function must be async.
   const myCart = [];
 
-  const products: product[] = []; // TypeScript could not infer the correct type.
+  type Product = { // Create type Product{}
+    id: number;
+    title: string;
+    slug: string;
+    price: number;
+  };
+
+  const products: Product[] = []; // TypeScript could not infer the correct type.
 
   const limit = 2
 
@@ -16,13 +23,16 @@
     const data = await rta.json(); // The Response object doesn't have a parseJson() method. I replaced it with json().
     products.push(...data);
   }
+
   function getTotal() {
     let total = 0; // const variables are immutable, so I changed it to let.
-    for (let i = 0; i < products.length; i++) { // The loop variable is reassigned, so I changed const to let. length is a property, not a function.
-      total += products[i].price;
+    for (let i = 0; i < products.length; i++) {// The loop variable is reassigned, so I changed const to let. length is a property, not a function.
+
+      total += products[i]!.price
     }
     return total;
   }
+
   function addProduct(index=0) { // Added the number type to the index parameter.
     if (getTotal() <= limit) { // getTotal() returns a number
       myCart.push(products[index]);
@@ -41,5 +51,4 @@
   const rta = `${person.name} ` + `${person.lastName} ` + limit; // Fixed the string concatenation.
   console.log(rta);
 })();
-
 
