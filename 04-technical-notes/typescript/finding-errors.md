@@ -45,4 +45,6 @@ This code contains several type errors, I fixed them with @ts-check.
 # Notes
 - TypeScript couldn't infer the correct type in JavaScript, so I used JSDoc to specify that products is a Product[].
 
-Fixed Code [Finding errors JS](/02-practice/typescript/src/finding-errors.js)
+Fixed Code [Finding errors JS](/02-practice/typescript/src/finding-errors.ts)
+
+Using the `.ts` extension enables TypeScript features such as static type checking, helping detect many common type-related errors during development.

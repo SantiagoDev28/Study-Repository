@@ -3,10 +3,9 @@
 
 // JavaScript example.
 (async ()=> { // This function must be async.
-  const myCart = [0];
+  const myCart = [];
 
-  /** @type {Product[]} */
-  const products= []; // TypeScript could not infer the correct type.
+  const products: product[] = []; // TypeScript could not infer the correct type.
 
   const limit = 2
 
