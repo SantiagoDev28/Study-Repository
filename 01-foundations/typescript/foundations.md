@@ -31,6 +31,10 @@ For example:
 ```
 type Role = 'admin' | 'user';
 ```
+TypeScript infers the most appropriate type based on how a variable can be used.
+
+- A let variable can change its value, so TypeScript usually infers a broader type such as number or string.
+- A const variable cannot be reassigned, so TypeScript can safely infer a literal type such as 20 or "admin".
 
 Once a variable has a type, TypeScript only allows access to methods that belong to that type.
 For example, `string` values provide methods such as `toLowerCase()`, while `number` values do not.
